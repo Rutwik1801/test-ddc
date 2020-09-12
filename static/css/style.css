@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --bg-color: #151515;
+  --font: Poppins, "sans-serif";
+  --font-color: #fff;
+  --nav-background: #222538;
+  --nav-font-size: 16px;
+  --nav-font-boldness: 900;
+  --subheading-color: #787171;
+  --page3-background: #5a5a5a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--font-color);
+  text-decoration: none;
+  outline: none;
+  opacity: 0.9;
+}
+
+body {
+  /* background: var(--bg-color); */
+  background-color: black;
+  color: var(--font-color);
+  font-family: var(--font);
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+nav {
+  box-shadow: none !important;
+  /* background: var(--nav-background); */
+}
+
+nav ul {
+  width: 75%;
+  /* ----------------------------------------------------------------------------- */
+  font-weight:lighter;
+  letter-spacing:1px;
+  text-transform: uppercase;
+  font-size: var(--nav-font-size);
+  /* ---------------------------------------------------------------------------------------- */
+  padding-right: 4rem;
+}
+
+.navbar-brand {
+  flex: 1;
+}
+
+.subheading {
+  line-height: 2;
+  color: var(--subheading-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#getinTouch {
+  background-color: white;
+  border: none;
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: 50px;
+  color: black;
+  padding: 15px 50px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  border-radius: 0;
+}
+#getinTouch:hover{
+  background-color: black;
+  color:white;
+}
+
+#social-icons img {
+  position: absolute;
+  cursor: pointer;
+}
+
+#social-icons img:nth-child(1) {
+  left: 0;
+  box-shadow: 0px 0px 25px #079cb8;
+  border-radius: 60%;
+}
+
+#social-icons img:nth-child(2) {
+  right: 35%;
+  bottom: 25%;
+  box-shadow: 0px 0px 25px #ffffff;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+#social-icons img:nth-child(3) {
+  left: 30%;
+  top: 30%;
+  box-shadow: 0px 0px 25px #f06229;
+  border-radius: 25px;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 10px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+div[id*="page"] {
+  height: 95vh;
+  padding-top: 1rem;
+  margin-bottom: 6rem;
+}
+
+#moreInfo {
+  background: #ffffff;
+  border-radius: 50px;
+  text-transform: none;
+}
+
+#page1{
+
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://i.pinimg.com/originals/b6/9e/9c/b69e9c5e28b4e059567b6209b011bb06.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.page-2-text-color {
+  color: #5293de;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.page-2-btn {
+  color: white !important;
+  background: linear-gradient(
+    273.87deg,
+    #9e00ff 6.17%,
+    #00f0ff 99.91%
+  ) !important;
+  font-weight: 600;
+  font-size: 18px !important;
+  padding: 10px 25px !important;
+}
+
+#page2 .jumbotron {
+  line-height: 2;
+}
+
+.width-size {
+  width: 80%;
+}
+
+.carousel-indicators {
+  top: 0 !important;
+  width: 100%;
+  height: 10px !important;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.carousel-indicators li {
+  position: relative;
+  background-color: transparent !important;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.carousel-indicators li::before {
+  width: 100% !important;
+  height: auto !important;
+  color: #919191;
+  text-indent: initial !important;
+  background: transparent !important;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem !important;
+}
+
+.carousel-indicators li:nth-child(1),
+.carousel-indicators li:nth-child(2) {
+  flex: 1.5;
+}
+
+.carousel-indicators li:nth-child(1)::before {
+  content: "Social Media Marketing";
+}
+.carousel-indicators li:nth-child(2)::before {
+  content: "Web Development";
+}
+.carousel-indicators li:nth-child(3)::before {
+  content: "SEO";
+}
+.carousel-indicators li:nth-child(4)::before {
+  content: "Design";
+}
+.carousel-indicators li:nth-child(5)::before {
+  content: "Paid Ads";
+}
+.carousel-indicators li:nth-child(6)::before {
+  content: "Branding";
+}
+.carousel-indicators li:nth-child(7)::before {
+  content: "Marketing";
+}
+
+.carousel-indicators li.active {
+  background: transparent !important;
+}
+
+.carousel-indicators li.active::before {
+  color: white;
+}
+
+#page2 .carousel-inner {
+  height: 600px;
+}
+
+.carousel-control-prev img {
+  max-width: 36px;
+  cursor: pointer;
+}
+
+.carousel-control-next img {
+  max-width: 36px;
+  cursor: pointer;
+}
+
+#page3 {
+  height: auto;
+  /* background: var(--page3-background); */
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://i.pinimg.com/originals/80/10/ad/8010ad2c01a212108776cd2b748a955e.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#hexBg{
+  top: -150px;
+  right: -100px;
+}
+
+.card {
+  height: 325px;
+  /* border-radius: 1rem !important; */
+  padding: 20px 5px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border-top: 5px solid red;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 20px rgba(255,255,255);
+}
+
+.card-primary {
+  color: #4a83c5;
+}
+
+.card-title {
+  color: #9700af;
+}
+
+#page3 .row {
+  margin: 0 auto;
+}
+
+footer {
+  background-image: url(../../resource/map.png),linear-gradient(#222538,#222538);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 0;
+  /* background: #222538; */
+  overflow: hidden;
+}
+
+/* #footer-img {
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  object-fit: cover;
+} */
+
+footer p {
+  line-height: 1.6rem;
+}
+
+footer ul {
+  line-height: 1.6rem;
+}
+
+#footer-socials a {
+  transition: filter 300ms;
+}
+
+#footer-socials a:hover {
+  filter: brightness(150%);
+}
+
+@media screen and (max-width: 1024px) {
+  nav ul {
+    width: 65%;
+    padding-right: 3rem !important;
+  }
+
+  .navbar-nav {
+    padding-right: 0 !important;
+    width: 100%;
+  }
+
+  .navbar-nav li {
+    margin-bottom: 10px;
+  }
+
+  #page2 {
+    height: auto !important;
+    margin-bottom: 2rem !important;
+  }
+
+  #footer-socials {
+    gap: 1rem;
+  }
+
+  #page2 .carousel-inner {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+  }
+
+  #social-icons img {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 552px) {
+  nav {
+    padding-top: 2.5rem !important;
+  }
+
+  nav ul {
+    width: 100%;
+    justify-content: center !important;
+    padding-right: 0 !important;
+  }
+
+  #social-icons {
+    width: 100%;
+  }
+
+  #social-icons img {
+    width: 45px;
+    height: 45px;
+  }
+
+  #social-icons img:nth-child(2) {
+    width: 38px;
+    height: 38px;
+  }
+
+  #page2 .carousel-inner {
+    height: 875px;
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+
+  #testimonial .container {
+    width: 75% !important;
+  }
+
+  .card {
+    height: 250px;
+  }
+
+  footer .container {
+    width: 100% !important;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
